@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b39f3ab2-8b49-4d4a-b719-2e902aa37d4a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from khs]]>
+	</queryString>
+	<field name="npm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips1" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips2" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips3" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips4" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips5" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips6" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips7" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ipk" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="43" height="20" uuid="7eb64bbc-5d38-406d-960f-16a5617559b5"/>
+				<text><![CDATA[npm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="2" width="47" height="20" uuid="fd43d9a0-7e16-4f92-99d9-7488856d53de"/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="2" width="35" height="20" uuid="e9b8f3a5-b4cb-4fc8-820f-c0c36c2cd8bc"/>
+				<text><![CDATA[ips1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="2" width="31" height="20" uuid="2b788231-763e-490b-a995-6aa1f74f8888"/>
+				<text><![CDATA[ips2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="2" width="28" height="20" uuid="802732dd-f9fb-4226-9a80-6044db39f389"/>
+				<text><![CDATA[ips3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="2" width="34" height="20" uuid="48d0a872-77b6-4f7d-86b4-54fd49ccc92f"/>
+				<text><![CDATA[ips4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="2" width="30" height="20" uuid="1ee68cce-0491-4de2-b032-66fb53f0c543"/>
+				<text><![CDATA[ips5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="2" width="29" height="20" uuid="85a32636-324a-495e-9f7c-9756f5342426"/>
+				<text><![CDATA[ips6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="2" width="32" height="20" uuid="c2a80be7-e58a-49ba-b1b8-70e684756b73"/>
+				<text><![CDATA[ips7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="2" width="36" height="20" uuid="18618590-1abc-4050-ad7c-876f51fa2e28"/>
+				<text><![CDATA[ipk]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="27" width="43" height="20" uuid="49476020-c65d-4809-a6b7-2c7c2c37b1e8"/>
+				<textFieldExpression><![CDATA[$F{npm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="59" y="27" width="47" height="20" uuid="e11972f9-d927-435d-9ce2-9e3f0ce56c1c"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="27" width="35" height="20" uuid="b39e1da0-03c3-47a2-bc35-50968935f639"/>
+				<textFieldExpression><![CDATA[$F{ips1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="27" width="31" height="20" uuid="cfc30d7d-ba9c-4a58-a6d4-dcca54a352de"/>
+				<textFieldExpression><![CDATA[$F{ips2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="27" width="28" height="20" uuid="cc424650-a455-4b05-903b-754df0dd7dea"/>
+				<textFieldExpression><![CDATA[$F{ips3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="27" width="34" height="20" uuid="c47ea4cb-e8fe-471a-b8e4-dc4893445778"/>
+				<textFieldExpression><![CDATA[$F{ips4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="27" width="30" height="20" uuid="92b64b50-8f9a-4e42-bd57-69fb6be198b7"/>
+				<textFieldExpression><![CDATA[$F{ips5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="27" width="29" height="20" uuid="89aabd53-fd13-4c5b-b7c6-d08bf0bd0554"/>
+				<textFieldExpression><![CDATA[$F{ips6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="27" width="32" height="20" uuid="5ec5ae4b-8388-437f-a066-8506538eda90"/>
+				<textFieldExpression><![CDATA[$F{ips7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="27" width="36" height="20" uuid="effa24e3-1733-4cad-a169-ef8bb372b1c8"/>
+				<textFieldExpression><![CDATA[$F{ipk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

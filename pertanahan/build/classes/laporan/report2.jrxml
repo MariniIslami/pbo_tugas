@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9b91982a-f06c-4b7a-98ed-51b412e892c2">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from desa]]>
+	</queryString>
+	<field name="id_desa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_kecamatan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_desa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="koordinat_bidang_desa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="24" y="2" width="100" height="20" uuid="da6c27de-a2b7-4bff-841f-1f3c4abf6510"/>
+				<text><![CDATA[id_desa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="154" y="2" width="100" height="20" uuid="202e4842-255d-4d3e-b5b7-6bc15b641b92"/>
+				<text><![CDATA[id_kecamatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="2" width="100" height="20" uuid="8a5d0ab7-2671-4859-83e3-ebf662e5b6d3"/>
+				<text><![CDATA[nama_desa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="2" width="100" height="20" uuid="4497e3ca-7ad1-4a90-8527-2108646a33a0"/>
+				<text><![CDATA[koordinat_bidang_desa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<textField>
+				<reportElement x="24" y="15" width="100" height="20" uuid="96179749-ebde-4618-97d7-94fd8aba7dda"/>
+				<textFieldExpression><![CDATA[$F{id_desa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="15" width="100" height="20" uuid="c5651367-7b5d-4647-87a9-96a5498294c0"/>
+				<textFieldExpression><![CDATA[$F{id_kecamatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="15" width="100" height="20" uuid="271a2402-4807-4e64-a41b-fa23e0eb8b50"/>
+				<textFieldExpression><![CDATA[$F{nama_desa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="15" width="100" height="20" uuid="aee4a3a4-6cae-4c2b-971b-bcb9e2a64053"/>
+				<textFieldExpression><![CDATA[$F{koordinat_bidang_desa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
